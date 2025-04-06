@@ -1,29 +1,34 @@
-# driver-drowsiness-detection
-A system which alarms the driver as soon as it detects that the driver is becoming drowsy to prevent any accident.
-<br/><br/>
-Steps to run : <br/>
-1) Download/Clone this repository<br/>
-2) Inside the main folder, open a terminal and run => python final-integration.py<br/>
-<br/>
-Working : 
-<br/>
-<ul>
-<li>Open Eyes</li>
-<img src="https://github.com/SuperThinking/driver-drowsiness-detection/blob/master/working_images/OpenEyes.png" width=400/>
-<br/>
-<li>Closed Eyes</li>
-<img src="https://github.com/SuperThinking/driver-drowsiness-detection/blob/master/working_images/ClosedEyes.png" width=400/>
-<br/>
-<li>Drowsiness Detection</li>
-<img src="https://github.com/SuperThinking/driver-drowsiness-detection/blob/master/working_images/Drowsy.png" width=400/>
-<br/>
-<li>Drowsiness Detection (Body Posture)</li>
-<img src="https://github.com/SuperThinking/driver-drowsiness-detection/blob/master/working_images/DrowsyBodyPosture.png" width=400/>
-<br/>
-<li>Yawn Detection</li>
-<img src="https://github.com/SuperThinking/driver-drowsiness-detection/blob/master/working_images/YawnDetection.png" width=400/>
-<br/>
-<li>Drowsiness Detection (After Yawn)</li>
-<img src="https://github.com/SuperThinking/driver-drowsiness-detection/blob/master/working_images/DrowsyAfterYawn.png" width=400/>
-<br/>
-</ul>
+🚗 Driver Fatigue and Distraction Detection System
+An affordable AI-powered driver fatigue and distraction detection system designed to improve road safety in Sri Lanka.
+This project uses computer vision techniques to monitor driver behavior, identify signs of fatigue or distraction, and provide timely alerts to help prevent accidents.
+
+🛑 Problem Statement
+Driver fatigue and distraction are major contributors to road accidents in Sri Lanka and around the world.
+Existing detection systems are often too expensive or unavailable in many regions.
+This project aims to develop a cost-effective, reliable, and easy-to-integrate solution to address this issue.
+
+✨ Features
+Real-time detection of driver fatigue (e.g., yawning, slow blinking).
+Identification of driver distraction (e.g., looking away from the road).
+Low-cost design to be practical for drivers in developing regions.
+Visual and/or audible alert system when signs of fatigue/distraction are detected.
+User feedback analysis for continuous improvement.
+Lightweight and easy to integrate with existing vehicles.
+
+🛠️ Tech Stack
+Python 3
+OpenCV (Computer Vision)
+TensorFlow / Keras (Deep Learning models)
+NumPy, Pandas (Data Processing)
+Matplotlib / Seaborn (Data Visualization)
+
+📈 System Architecture
+Video Input (Webcam/Camera)
+
+Face and Eye Detection using OpenCV Haar cascades or DNNs
+
+Fatigue/Distraction Classification using trained CNN models
+
+Alert System (Audio or Visual Alerts)
+
+User Feedback Collection and Analysis
